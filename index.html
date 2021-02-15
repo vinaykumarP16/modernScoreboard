@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modern-Cricket Scorecard </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/18fc5b7198.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+
+</head>
+<body>
+	<div class="cricket">
+	<h1>Cricket</h1>
+	
+	<button onclick="format()">format</button>
+	<h1 id="format"></h1>
+	<div class="teams">
+		<div class="team1">
+		<button onclick="team1()">team1</button>
+		<h1 id="team1"></h1>
+		</div>
+		<div class="team2">
+		<button onclick="team2()">team2</button>
+		<h1 id="team2"></h1>
+		</div>
+	</div>
+	<div class="fulltotal">
+		<h1>Runs distribution</h1><br> <br>
+		1's :<input type="number" id="one"> 
+		2's :<input type="number" id="two"> 
+		3's :<input type="number" id="three"> 
+		4's :<input type="number" id="four"> 
+		6's :<input type="number" id="six"> 
+		extras :<input type="number" id="extra"> 
+		<button onclick="fullTotal()">calculate</button> <br>	
+		<p id="totalrunsdistributes"></p>
+
+	</div>
+	<br>
+	<br>
+
+	<h1>over calculate</h1>
+
+	1st ball<input type="number" id="b1">
+	2nd ball<input type="number" id="b2">
+	3rd ball<input type="number" id="b3"><br>
+	4th ball<input type="number" id="b4">
+	5th ball<input type="number" id="b5">
+	6th ball<input type="number" id="b6"> <br>
+	<button onclick="total()">total</button><br>
+	over total:<h1 id="total"></h1>
+
+	1st innings score:<input type="number" id="ing1">
+	2nd innings score:<input type="number" id="ing2"> <br>
+	<button onclick="towin()">to-win</button><br>
+	runs needed is :<h1 id="need"></h1>		
+
+	wicket<input type="number" id="wicket">
+	<button onclick="wicket()">wicket</button>
+	wickets remaining is :<h1 id="wic"></h1>
+	</div>
+	overs left<input type="number" id="overs">
+	<button onclick="overBall()">Calc-balls</button>
+	balls remaining is :<h1 id="ball"></h1>
+	</div>
+
+	<!-- <button onclick="display()">line</button> -->
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
